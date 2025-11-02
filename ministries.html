@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries | Fountain Gate Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ministries.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-church"></i>
+                Fountain Gate Church - Utawala
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html" class="active">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Our Ministries</h1>
+            <p>Discover opportunities to grow, serve, and connect with others in our church community.</p>
+        </div>
+    </section>
+
+    <!-- Ministries Filter -->
+    <section class="ministries-filter">
+        <div class="container filter-container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Ministries</button>
+                <button class="filter-btn" data-filter="children">Children</button>
+                <button class="filter-btn" data-filter="youth">Youth</button>
+                <button class="filter-btn" data-filter="adults">Adults</button>
+                <button class="filter-btn" data-filter="seniors">Seniors</button>
+                <button class="filter-btn" data-filter="outreach">Outreach</button>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search ministries...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Ministry -->
+    <section class="featured-ministry">
+        <div class="container featured-container">
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Children's Ministry">
+            </div>
+            <div class="featured-content">
+                <h2>Featured Ministry</h2>
+                <h3>Children's Ministry</h3>
+                <div class="ministry-meta">
+                    <span><i class="fas fa-users"></i> Ages 3-12</span>
+                    <span><i class="far fa-clock"></i> Sundays 9:00 AM & 11:00 AM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Children's Wing</span>
+                </div>
+                <p>Our Children's Ministry provides a safe, engaging environment where kids can learn about God's love through age-appropriate lessons, activities, and worship. We're committed to partnering with parents to nurture children's spiritual growth.</p>
+                <p>Each week, our dedicated team of volunteers creates memorable experiences that help children build a foundation of faith that will last a lifetime.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Grid -->
+    <section class="ministries-grid">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>All Ministries</h2>
+            </div>
+            <div class="ministries-container" id="ministries-container">
+                <!-- Ministries will be dynamically loaded here -->
+            </div>
+
+            <div class="no-results" id="no-results">
+                <i class="fas fa-search fa-3x" style="color: var(--gray); margin-bottom: 20px;"></i>
+                <h3>No Ministries Found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Leaders -->
+    <section class="ministry-leaders">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Ministry Leaders</h2>
+            </div>
+            <div class="leaders-container">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80" alt="Rebecca Martinez">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Rebecca Martinez</h3>
+                        <span class="leader-role">Children's Ministry Director</span>
+                        <p>Rebecca has been serving in children's ministry for over 10 years and is passionate about helping kids discover God's love.</p>
+                    </div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Mark Thompson">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Mark Thompson</h3>
+                        <span class="leader-role">Youth Pastor</span>
+                        <p>Mark leads our youth ministry with energy and creativity, helping teens navigate faith in a complex world.</p>
+                    </div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Jennifer Lee">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Jennifer Lee</h3>
+                        <span class="leader-role">Outreach Coordinator</span>
+                        <p>Jennifer oversees our community outreach programs, connecting our church with local needs and opportunities.</p>
+                    </div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1580301762386-5b5d50dc6a95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Robert Johnson">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Robert Johnson</h3>
+                        <span class="leader-role">Senior Adults Ministry</span>
+                        <p>Robert brings wisdom and compassion to our ministry for seniors, creating meaningful connections and spiritual growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Get Involved</h2>
+            </div>
+            <div class="involved-container">
+                <div class="involved-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Share your time and talents to serve others through our various ministry opportunities.</p>
+                    <a href="#" class="btn btn-outline">Volunteer Today</a>
+                </div>
+                <div class="involved-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Join a Ministry</h3>
+                    <p>Find your place in our church family by joining a ministry that matches your interests and gifts.</p>
+                    <a href="#" class="btn btn-outline">Explore Ministries</a>
+                </div>
+                <div class="involved-card">
+                    <i class="fas fa-pray"></i>
+                    <h3>Prayer Team</h3>
+                    <p>Join our prayer team and intercede for the needs of our church, community, and world.</p>
+                    <a href="#" class="btn btn-outline">Join Prayer Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Events -->
+    <section class="ministry-events">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Upcoming Ministry Events</h2>
+            </div>
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Youth Summer Camp</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 9:00 AM - 4:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Lakeview Campground</span>
+                        </div>
+                        <p>A week of fun, fellowship, and spiritual growth for our youth group. Registration required.</p>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Senior Adults Luncheon</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 12:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Fellowship Hall</span>
+                        </div>
+                        <p>Monthly gathering for our senior adults with special guest speaker and fellowship.</p>
+                        <a href="#" class="btn">RSVP</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">June</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Community Food Drive</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 10:00 AM - 2:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Church Parking Lot</span>
+                        </div>
+                        <p>Help us collect non-perishable food items for local families in need.</p>
+                        <a href="#" class="btn">Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Fountain Gate Church - Utawala is a welcoming Christian community dedicated to sharing God's love, growing in faith, and serving others.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday Worship: 
+                            <li>8:00 AM - 9:00 AM (Teens Service)</li>
+                            <li>9:00 AM - 10:00 AM (King Priest Service)</Li>
+                            <li>11:00 AM - 12:00 PM (Children's Service)</li>
+                            <li>10:00 AM - 12:30 PM (Family Service)</li>       
+                        </li>
+                        <li>Kingpriest School : Wednesdays at 9:00 PM - 10:00 PM</li>
+                        <li>Effective Fervent Prayers: Fridays at 6:00 PM - 7:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kincar, Fahari road, Opposite Fahari Hotel</li>
+                        <li><i class="fas fa-phone"></i> (+254) 720 366 062 | (+254) 720 869 288</li>
+                        <li><i class="fas fa-envelope"></i> info@gracecommunitychurch.org</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FGC - Utawala. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ministries.js"></script>
+</body>
+</html>

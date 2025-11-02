@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Grace Community Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-church"></i>
+                Fountain Gate Church - Utawala
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out with questions, prayer requests, or to learn more about our church.</p>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>We're here to help you connect with God and our church community. Whether you have questions, need prayer, or want to get involved, we'd love to hear from you.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h4>Our Location</h4>
+                            <p>Kincar, Fahari road, Opposite Fahari Hotel</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>(+254) 720 366 062 | (+254) 720 869 288</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>info@fountaingatechurch.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="far fa-clock"></i>
+                        <div class="contact-text">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Thursday: 9:00 AM - 5:00 PM<br>Friday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-times">
+                    <h3>Service Times</h3>
+                    <div class="service-time-item">
+                        <span>Sunday Worship</span>
+                        <span>9:00 AM & 11:00 AM</span>
+                    </div>
+                    <div class="service-time-item">
+                        <span>Wednesday Bible Study</span>
+                        <span>7:00 PM</span>
+                    </div>
+                    <div class="service-time-item">
+                        <span>Youth Group</span>
+                        <span>Fridays at 6:30 PM</span>
+                    </div>
+                    <div class="service-time-item">
+                        <span>Prayer Meeting</span>
+                        <span>Fridays at 7:00 AM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <div class="form-status" id="form-status"></div>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="prayer">Prayer Request</option>
+                            <option value="visitor">I'm New Here</option>
+                            <option value="ministry">Ministry Information</option>
+                            <option value="event">Event Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Find Us</h2>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Interactive Map</h3>
+                    <p>Kincar, Fahari road, Opposite Fahari Hotel</p>
+                    <a href="https://www.google.com/maps/search/Kincar,+Fahari+road,+Opposite+Fahari+Hotel/@-2.6410616,35.6939892,7z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MTAxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn" style="margin-top: 20px;">Get Directions</a>
+                </div>
+                <!-- In a real implementation, you would embed a Google Maps iframe here -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.953434366656!2d-118.123456!3d34.067890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA0JzA0LjQiTiAxMTjCsDA3JzI0LjQiVw!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Directory -->
+    <section class="staff-directory">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Our Staff</h2>
+                <p>Meet our dedicated team who are here to serve you</p>
+            </div>
+            <div class="staff-container">
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="images/IMG-1.jpg" alt="Pastor Morris Ochieng'">
+                    </div>
+                    <div class="staff-content">
+                        <h3>Morris Ochieng'</h3>
+                        <span class="staff-role">Senior Pastor</span>
+                        <p>Pastor Morris provides spiritual leadership and vision for our church community.</p>
+                        <div class="staff-contact">
+                            <a href="mailto:michael@gracecommunitychurch.org"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:(+254) 720 366 062"><i class="fas fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="images/IMG-50(1).jpg" alt="Pastor Jemimah Ochieng'">
+                    </div>
+                    <div class="staff-content">
+                        <h3>Jemimah Ochieng'</h3>
+                        <span class="staff-role">Associate Pastor</span>
+                        <p>Pastor Jemimah oversees discipleship, small groups, and women's ministries.</p>
+                        <div class="staff-contact">
+                            <a href="mailto:sarah@gracecommunitychurch.org"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:(+254) 720 869 288"><i class="fas fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="David Chen">
+                    </div>
+                    <div class="staff-content">
+                        <h3>David Chen</h3>
+                        <span class="staff-role">Worship Director</span>
+                        <p>David leads our worship ministry with creativity and passion for honoring God.</p>
+                        <div class="staff-contact">
+                            <a href="mailto:david@gracecommunitychurch.org"><i class="fas fa-envelope"></i> Email</a>
+                            <a href="tel:5551234569"><i class="fas fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What should I expect when I visit for the first time?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you visit Fountain Gate Church for the first time, you can expect a warm welcome from our greeters, uplifting worship music, and a relevant Bible-based message. Our services typically last about 75 minutes. Feel free to dress comfortably - you'll see everything from casual to business attire.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you have programs for children and youth?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We have age-appropriate programs for children from nursery through high school. Our Children's Ministry provides engaging lessons and activities during both Sunday services. Our Youth Group meets Friday evenings for fellowship, games, and Bible study. All our volunteers are background-checked and trained to provide a safe environment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I get involved in serving at the church?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>There are many opportunities to serve at Grace Community Church! You can join our greeting team, help with children's ministry, participate in our outreach programs, assist with worship, or help with facilities. We recommend starting by attending our "Discover Grace" class, which provides an overview of our church and ways to get connected.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer counseling services?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer biblical counseling for individuals, couples, and families. Our pastoral staff provides counseling for various life issues including marriage, grief, addiction, and spiritual growth. To schedule an appointment, please contact the church office. There may be a waiting list for non-emergency counseling.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I request prayer?</h3>
+                        <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can request prayer in several ways: submit a prayer request through our website contact form, email prayer@gracecommunitychurch.org, call the church office, or fill out a prayer request card during our services. Our prayer team prays over all requests confidentially. For urgent prayer needs, you can call the church office during business hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Other Ways to Connect</h2>
+            </div>
+            <div class="methods-container">
+                <div class="method-card">
+                    <i class="fas fa-pray"></i>
+                    <h3>Prayer Requests</h3>
+                    <p>Share your prayer needs with our dedicated prayer team.</p>
+                    <a href="mailto:prayer@gracecommunitychurch.org" class="btn btn-outline">Send Prayer Request</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Discover opportunities to serve in our church and community.</p>
+                    <a href="mailto:volunteer@gracecommunitychurch.org" class="btn btn-outline">Get Involved</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Membership</h3>
+                    <p>Learn about becoming a member of Grace Community Church.</p>
+                    <a href="mailto:membership@gracecommunitychurch.org" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="method-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Event Information</h3>
+                    <p>Get details about upcoming events and how to participate.</p>
+                    <a href="mailto:events@gracecommunitychurch.org" class="btn btn-outline">Inquire About Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Fountain Gate Church - Utawala is a welcoming Christian community dedicated to sharing God's love, growing in faith, and serving others.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday Worship: 
+                            <li>8:00 AM - 9:00 AM (Teens Service)</li>
+                            <li>9:00 AM - 10:00 AM (King Priest Service)</Li>
+                            <li>11:00 AM - 12:00 PM (Children's Service)</li>
+                            <li>10:00 AM - 12:30 PM (Family Service)</li>       
+                        </li>
+                        <li>Kingpriest School : Wednesdays at 9:00 PM - 10:00 PM</li>
+                        <li>Effective Fervent Prayers: Fridays at 6:00 PM - 7:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kincar, Fahari road, Opposite Fahari Hotel</li>
+                        <li><i class="fas fa-phone"></i> (+254) 720 366 062 | (+254) 720 869 288</li>
+                        <li><i class="fas fa-envelope"></i> info@gracecommunitychurch.org</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FGC - Utawala. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

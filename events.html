@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Fountain Gate Church</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-church"></i>
+                Fountain Gate Church - Utawala
+            </a>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="ministries.html">Ministries</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Church Events</h1>
+            <p>Join us for worship, fellowship, and service opportunities throughout the year.</p>
+        </div>
+    </section>
+
+    <!-- Events Filter -->
+    <section class="events-filter">
+        <div class="container filter-container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                <button class="filter-btn" data-filter="featured">Featured</button>
+                <button class="filter-btn" data-filter="worship">Worship</button>
+                <button class="filter-btn" data-filter="fellowship">Fellowship</button>
+                <button class="filter-btn" data-filter="service">Service</button>
+            </div>
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i> Grid</button>
+                <button class="view-btn" data-view="calendar"><i class="far fa-calendar-alt"></i> Calendar</button>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search events...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="events-grid" id="events-grid">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="events-container" id="events-container">
+                <!-- Events will be dynamically loaded here -->
+            </div>
+
+            <div class="no-results" id="no-results">
+                <i class="fas fa-search fa-3x" style="color: var(--gray); margin-bottom: 20px;"></i>
+                <h3>No Events Found</h3>
+                <p>Try adjusting your search or filter criteria.</p>
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar View -->
+    <section class="calendar-view" id="calendar-view">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Event Calendar</h2>
+            </div>
+            <div class="calendar-container" id="calendar-container">
+                <!-- Calendar will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Event -->
+    <section class="featured-event">
+        <div class="container featured-container">
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Summer Picnic">
+            </div>
+            <div class="featured-content">
+                <h2>Featured Event</h2>
+                <h3>Annual Summer Picnic & Fellowship</h3>
+                <div class="event-meta">
+                    <span><i class="far fa-calendar"></i> Saturday, June 15, 2023</span>
+                    <span><i class="far fa-clock"></i> 11:00 AM - 3:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Community Park</span>
+                </div>
+                <p>Join us for our annual summer picnic filled with food, games, and fellowship! This is a wonderful opportunity to connect with church members of all ages in a relaxed outdoor setting.</p>
+                <p>We'll provide grilled favorites, drinks, and dessert. Please bring a side dish or salad to share. There will be activities for children, lawn games, and plenty of shade for conversation.</p>
+                <a href="#" class="btn">RSVP Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Categories -->
+    <section class="event-categories">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Event Categories</h2>
+            </div>
+            <div class="categories-container">
+                <div class="category-card active" data-category="all">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>All Events</h3>
+                    <p>View all church events</p>
+                </div>
+                <div class="category-card" data-category="worship">
+                    <i class="fas fa-pray"></i>
+                    <h3>Worship</h3>
+                    <p>Services and spiritual gatherings</p>
+                </div>
+                <div class="category-card" data-category="fellowship">
+                    <i class="fas fa-users"></i>
+                    <h3>Fellowship</h3>
+                    <p>Community building events</p>
+                </div>
+                <div class="category-card" data-category="service">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Service</h3>
+                    <p>Outreach and volunteer opportunities</p>
+                </div>
+                <div class="category-card" data-category="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>Classes and learning opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recurring Events -->
+    <section class="recurring-events">
+        <div class="container">
+            <div class="section-header center-heading">
+                <h2>Weekly & Monthly Events</h2>
+            </div>
+            <div class="recurring-container">
+                <div class="recurring-card">
+                    <i class="fas fa-church"></i>
+                    <h3>Sunday Worship</h3>
+                    <p>Join us every Sunday for inspiring worship services</p>
+                    <div class="event-meta">
+                        <span><i class="far fa-clock"></i> 9:00 AM & 11:00 AM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Sanctuary</span>
+                    </div>
+                </div>
+                <div class="recurring-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Wednesday Bible Study</h3>
+                    <p>Deep dive into Scripture with our pastoral team</p>
+                    <div class="event-meta">
+                        <span><i class="far fa-clock"></i> 7:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Fellowship Hall</span>
+                    </div>
+                </div>
+                <div class="recurring-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Prayer Meeting</h3>
+                    <p>Corporate prayer for church needs and community</p>
+                    <div class="event-meta">
+                        <span><i class="far fa-clock"></i> Fridays, 7:00 AM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Prayer Room</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Fountain Gate Church - Utawala is a welcoming Christian community dedicated to sharing God's love, growing in faith, and serving others.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday Worship: 
+                            <li>8:00 AM - 9:00 AM (Teens Service)</li>
+                            <li>9:00 AM - 10:00 AM (King Priest Service)</Li>
+                            <li>11:00 AM - 12:00 PM (Children's Service)</li>
+                            <li>10:00 AM - 12:30 PM (Family Service)</li>       
+                        </li>
+                        <li>Kingpriest School : Wednesdays at 9:00 PM - 10:00 PM</li>
+                        <li>Effective Fervent Prayers: Fridays at 6:00 PM - 7:00 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kincar, Fahari road, Opposite Fahari Hotel</li>
+                        <li><i class="fas fa-phone"></i> (+254) 720 366 062 | (+254) 720 869 288</li>
+                        <li><i class="fas fa-envelope"></i> info@gracecommunitychurch.org</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FGC - Utawala. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>
